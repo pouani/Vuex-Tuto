@@ -7,7 +7,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 px-2 py-4 gap-8">
                 <!-- {{getAllprods}} -->
                 <router-link :to="{name: 'product-detail', params: { id: product.id}}"
-                 class="rounded-md" v-for="(product, index) in getAllprods[0]" :key="index">
+                 class="rounded-md" v-for="(product, index) in getAllprods" :key="index">
                     <img class="rounded-md cursor-pointer" v-if="product.image !=null" :src="'' + product.image " alt="" />
                     <img v-else src="../../assets/szabo-janos-unsplash.jpg" alt="" class="rounded-md cursor-pointer">
                     <div class="flex justify-between items-center">

@@ -1,11 +1,13 @@
 <template lang="">
     <div class="flex justify-center items-center h-screen">
         <div class="product grid grid-cols-2 gap-2">
-            <img src="../../assets/szabo-janos-unsplash.jpg" alt="" class="rounded-md">
+            <img class="rounded-md cursor-pointer" v-if="getCurentProduct.image !=null" :src="'' + getCurentProduct.image " alt="" />
+            <img v-else src="../../assets/szabo-janos-unsplash.jpg" alt="" class="rounded-md">
             <div class="flex flex-col justify-center gap-2">
-                <h3 class="text-3xl text-gray-300">{{getCurentProduct}}</h3>
-                <p class="text-2xl text-gray-400">1500</p>
-                <p class="product-status">Disponible</p>
+                <h3 class="text-3xl text-gray-300">{{ getCurentProduct.name }}</h3>
+                <p class="text-2xl text-gray-400">{{ getCurentProduct.price }}</p>
+                <p class="product-status" v-if="getCurentProduct.active">Disponible</p>
+                <p class="text-red-400" v-else>Indisponible</p>
                 <div>
                     <button class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500
                      focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80">supprimer</button>

@@ -24,7 +24,6 @@ export const ModuleProduct = {
             state.products = payload;
         },
         SET_CURENT_PRODUCT(state, payload) {
-            console.log("ici1", state.curentProduct)
             state.curentProduct = payload;
         },
     },
@@ -33,7 +32,6 @@ export const ModuleProduct = {
             return state.products;
         },
         getCurentProduct(state){
-            console.log("ici", state.curentProduct)
             return state.curentProduct;
         }
     },
