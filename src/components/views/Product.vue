@@ -2,18 +2,7 @@
     <div class="dark:text-white">
         <div>
             <div class="px-1 py-3">
-                <div class="search flex items-center mx-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mt-2">
-                    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-                    </svg>
-
-                    <input type="text" class="w-full px-4 py-2 mt-2 
-                        placeholder-gray-500 rounded-md dark:bg-gray-900 
-                        dark:placeholder-gray-400 
-                         focus:outline-none dark:text-white 
-                        " placeholder="Rechercher....">
-                </div>
-                <h2 class="text-2xl mt-2">Tous vos articles</h2>
+                <h2 class="text-3xl mt-2">Tous vos articles</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 px-2 py-4 gap-8">
                 <!-- {{getAllprods}} -->
